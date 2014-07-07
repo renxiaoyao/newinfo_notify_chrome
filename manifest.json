@@ -1,0 +1,14 @@
+{
+"name": "NewIssueNotify",
+"version": "2.0",
+"manifest_version":2,
+"description": "Get new issue from aramark.",
+"browser_action": {"default_icon": "bigfire.png","default_popup": "popup.html"},
+"content_scripts": [//For page content
+    {
+      "matches": ["https://alm.aramark.eu/*"],
+      "js": ["jquery-1.11.1.min.js", "myscript.js"]
+    }
+  ],
+"permissions": [ "http://*/*", "https://*/*", "notifications" ]
+}
